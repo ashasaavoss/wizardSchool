@@ -386,11 +386,14 @@ function buildLayers() {
     });
 
     // 1c. Face expression (z: 16) — head/faces/{faceType}/neutral/{anim}.png
-    layers.push({
-        id: 'face',
-        urlBuilder: (anim) => `${ASSET_BASE}/head/faces/${faceType}/neutral/${anim}.png`,
-        zIndex: 16,
-    });
+    // Skip face overlay for children — the child head sprite already includes the face
+    if (bt !== 'child') {
+        layers.push({
+            id: 'face',
+            urlBuilder: (anim) => `${ASSET_BASE}/head/faces/${faceType}/neutral/${anim}.png`,
+            zIndex: 16,
+        });
+    }
 
     // 1d. Ears (z: 17) — head/ears/{earType}/adult/{anim}/{skinColor}.png
     if (characterState.ears !== 'none') {
