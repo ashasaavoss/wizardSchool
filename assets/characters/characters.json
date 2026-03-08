@@ -1,0 +1,367 @@
+{
+  "headmaster": {
+    "description": "Headmaster - wise elderly wizard (Dumbledore archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/big/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "blue",
+        "z_order": 15
+      },
+      {
+        "path": "hair/long/adult",
+        "variant": "white",
+        "z_order": 20
+      },
+      {
+        "path": "beards/beard/medium",
+        "variant": "white",
+        "z_order": 22
+      },
+      {
+        "path": "beards/mustache/walrus",
+        "variant": "white",
+        "z_order": 23
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "purple",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "purple",
+        "z_order": 30
+      },
+      {
+        "path": "feet/boots/basic/male",
+        "variant": "brown",
+        "z_order": 35
+      },
+      {
+        "path": "cape/solid/male",
+        "variant": "maroon",
+        "z_order": 5
+      },
+      {
+        "path": "hat/magic/celestial/adult",
+        "variant": "purple",
+        "z_order": 50
+      }
+    ]
+  },
+  "mean_teacher": {
+    "description": "Mean Teacher - dark and brooding (Snape archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/big/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "brown",
+        "z_order": 15
+      },
+      {
+        "path": "hair/long/adult",
+        "variant": "black",
+        "z_order": 20
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "black",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "black",
+        "z_order": 30
+      },
+      {
+        "path": "feet/boots/basic/male",
+        "variant": "black",
+        "z_order": 35
+      },
+      {
+        "path": "cape/solid/male",
+        "variant": "black",
+        "z_order": 5
+      }
+    ]
+  },
+  "mysterious_teacher": {
+    "description": "Mysterious Teacher - enigmatic and hooded",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "olive",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/straight/adult",
+        "variant": "olive",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "green",
+        "z_order": 15
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "navy",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "navy",
+        "z_order": 30
+      },
+      {
+        "path": "feet/boots/basic/male",
+        "variant": "brown",
+        "z_order": 35
+      },
+      {
+        "path": "cape/solid/male",
+        "variant": "blue",
+        "z_order": 5
+      },
+      {
+        "path": "hat/cloth/hood/adult",
+        "variant": "navy",
+        "z_order": 50
+      }
+    ]
+  },
+  "best_friend": {
+    "description": "Best Friend Student - loyal and cheerful (Ron archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/button/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "blue",
+        "z_order": 15
+      },
+      {
+        "path": "hair/messy2/adult",
+        "variant": "carrot",
+        "z_order": 20
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "maroon",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "charcoal",
+        "z_order": 30
+      },
+      {
+        "path": "feet/shoes/revised/male",
+        "variant": "brown",
+        "z_order": 35
+      }
+    ]
+  },
+  "silly_student": {
+    "description": "Silly Student - goofy and fun-loving",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/button/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "brown",
+        "z_order": 15
+      },
+      {
+        "path": "hair/spiked/adult",
+        "variant": "blonde",
+        "z_order": 20
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "yellow",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "green",
+        "z_order": 30
+      },
+      {
+        "path": "feet/slippers/male",
+        "variant": "brown",
+        "z_order": 35
+      }
+    ]
+  },
+  "enemy_student": {
+    "description": "Enemy Student - arrogant rival (Malfoy archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/straight/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "gray",
+        "z_order": 15
+      },
+      {
+        "path": "hair/parted/adult",
+        "variant": "blonde",
+        "z_order": 20
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "green",
+        "z_order": 40
+      },
+      {
+        "path": "legs/formal/male",
+        "variant": "black",
+        "z_order": 30
+      },
+      {
+        "path": "feet/boots/basic/male",
+        "variant": "black",
+        "z_order": 35
+      },
+      {
+        "path": "cape/solid/male",
+        "variant": "green",
+        "z_order": 5
+      }
+    ]
+  },
+  "prefect": {
+    "description": "Prefect - uptight rule-follower (Percy archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/straight/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "brown",
+        "z_order": 15
+      },
+      {
+        "path": "hair/parted/adult",
+        "variant": "carrot",
+        "z_order": 20
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "maroon",
+        "z_order": 40
+      },
+      {
+        "path": "torso/clothes/vest/male",
+        "variant": "charcoal",
+        "z_order": 42
+      },
+      {
+        "path": "legs/formal/male",
+        "variant": "charcoal",
+        "z_order": 30
+      },
+      {
+        "path": "feet/shoes/revised/male",
+        "variant": "black",
+        "z_order": 35
+      }
+    ]
+  },
+  "evil_sorcerer": {
+    "description": "Evil Sorcerer - dark lord villain (Voldemort archetype)",
+    "layers": [
+      {
+        "path": "body/bodies/male",
+        "variant": "light",
+        "z_order": 10
+      },
+      {
+        "path": "head/nose/big/adult",
+        "variant": "light",
+        "z_order": 16
+      },
+      {
+        "path": "eyes/human/adult/default",
+        "variant": "red",
+        "z_order": 15
+      },
+      {
+        "path": "torso/clothes/longsleeve/longsleeve/male",
+        "variant": "black",
+        "z_order": 40
+      },
+      {
+        "path": "legs/pantaloons/male",
+        "variant": "black",
+        "z_order": 30
+      },
+      {
+        "path": "feet/boots/basic/male",
+        "variant": "black",
+        "z_order": 35
+      },
+      {
+        "path": "cape/solid/male",
+        "variant": "black",
+        "z_order": 5
+      },
+      {
+        "path": "hat/cloth/hood/adult",
+        "variant": "black",
+        "z_order": 50
+      }
+    ]
+  }
+}
