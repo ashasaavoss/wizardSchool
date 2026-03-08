@@ -8,6 +8,11 @@
         "z_order": 10
       },
       {
+        "path": "head/heads/human/male_elderly",
+        "variant": "light",
+        "z_order": 11
+      },
+      {
         "path": "head/nose/big/adult",
         "variant": "light",
         "z_order": 16
@@ -68,6 +73,11 @@
         "z_order": 10
       },
       {
+        "path": "head/heads/human/male",
+        "variant": "light",
+        "z_order": 11
+      },
+      {
         "path": "head/nose/big/adult",
         "variant": "light",
         "z_order": 16
@@ -111,6 +121,11 @@
         "path": "body/bodies/male",
         "variant": "olive",
         "z_order": 10
+      },
+      {
+        "path": "head/heads/human/male",
+        "variant": "olive",
+        "z_order": 11
       },
       {
         "path": "head/nose/straight/adult",
@@ -158,6 +173,11 @@
         "z_order": 10
       },
       {
+        "path": "head/heads/human/male",
+        "variant": "light",
+        "z_order": 11
+      },
+      {
         "path": "head/nose/button/adult",
         "variant": "light",
         "z_order": 16
@@ -198,6 +218,11 @@
         "z_order": 10
       },
       {
+        "path": "head/heads/human/male",
+        "variant": "light",
+        "z_order": 11
+      },
+      {
         "path": "head/nose/button/adult",
         "variant": "light",
         "z_order": 16
@@ -236,6 +261,11 @@
         "path": "body/bodies/male",
         "variant": "light",
         "z_order": 10
+      },
+      {
+        "path": "head/heads/human/male",
+        "variant": "light",
+        "z_order": 11
       },
       {
         "path": "head/nose/straight/adult",
@@ -283,6 +313,11 @@
         "z_order": 10
       },
       {
+        "path": "head/heads/human/male",
+        "variant": "light",
+        "z_order": 11
+      },
+      {
         "path": "head/nose/straight/adult",
         "variant": "light",
         "z_order": 16
@@ -326,6 +361,11 @@
         "path": "body/bodies/male",
         "variant": "light",
         "z_order": 10
+      },
+      {
+        "path": "head/heads/human/male_gaunt",
+        "variant": "light",
+        "z_order": 11
       },
       {
         "path": "head/nose/big/adult",

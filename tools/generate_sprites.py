@@ -120,6 +120,7 @@ CHARACTERS = {
         "description": "Headmaster - wise elderly wizard (Dumbledore archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male_elderly", "light", 11),
             ("head/nose/big/adult", "light", 16),
             ("eyes/human/adult/default", "blue", 15),
             ("hair/long/adult", "white", 20),
@@ -136,6 +137,7 @@ CHARACTERS = {
         "description": "Mean Teacher - dark and brooding (Snape archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male", "light", 11),
             ("head/nose/big/adult", "light", 16),
             ("eyes/human/adult/default", "brown", 15),
             ("hair/long/adult", "black", 20),
@@ -149,6 +151,7 @@ CHARACTERS = {
         "description": "Mysterious Teacher - enigmatic and hooded",
         "layers": [
             ("body/bodies/male", "olive", 10),
+            ("head/heads/human/male", "olive", 11),
             ("head/nose/straight/adult", "olive", 16),
             ("eyes/human/adult/default", "green", 15),
             ("torso/clothes/longsleeve/longsleeve/male", "navy", 40),
@@ -162,6 +165,7 @@ CHARACTERS = {
         "description": "Best Friend Student - loyal and cheerful (Ron archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male", "light", 11),
             ("head/nose/button/adult", "light", 16),
             ("eyes/human/adult/default", "blue", 15),
             ("hair/messy2/adult", "carrot", 20),
@@ -174,6 +178,7 @@ CHARACTERS = {
         "description": "Silly Student - goofy and fun-loving",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male", "light", 11),
             ("head/nose/button/adult", "light", 16),
             ("eyes/human/adult/default", "brown", 15),
             ("hair/spiked/adult", "blonde", 20),
@@ -186,6 +191,7 @@ CHARACTERS = {
         "description": "Enemy Student - arrogant rival (Malfoy archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male", "light", 11),
             ("head/nose/straight/adult", "light", 16),
             ("eyes/human/adult/default", "gray", 15),
             ("hair/parted/adult", "blonde", 20),
@@ -199,6 +205,7 @@ CHARACTERS = {
         "description": "Prefect - uptight rule-follower (Percy archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male", "light", 11),
             ("head/nose/straight/adult", "light", 16),
             ("eyes/human/adult/default", "brown", 15),
             ("hair/parted/adult", "carrot", 20),
@@ -212,6 +219,7 @@ CHARACTERS = {
         "description": "Evil Sorcerer - dark lord villain (Voldemort archetype)",
         "layers": [
             ("body/bodies/male", "light", 10),
+            ("head/heads/human/male_gaunt", "light", 11),
             ("head/nose/big/adult", "light", 16),
             ("eyes/human/adult/default", "red", 15),
             ("torso/clothes/longsleeve/longsleeve/male", "black", 40),
