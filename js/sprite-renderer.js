@@ -61,6 +61,7 @@ class SpriteRenderer {
             };
             img.onerror = () => {
                 // Cache the failure so we don't retry endlessly
+                console.warn('[SpriteRenderer] Failed to load:', url);
                 this.imageCache.set(url, null);
                 resolve(null);
             };

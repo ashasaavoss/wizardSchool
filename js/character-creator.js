@@ -368,8 +368,11 @@ function buildLayers() {
     // Map body type to head/face type
     const headTypeMap = { male: 'male', female: 'female', muscular: 'male', teen: 'male', child: 'child' };
     const faceTypeMap = { male: 'male', female: 'female', muscular: 'male', teen: 'male', child: 'male' };
+    // Most clothing assets only have male/female/teen variants — map others to closest match
+    const clothingBtMap = { male: 'male', female: 'female', muscular: 'male', teen: 'teen', child: 'male' };
     const headType = headTypeMap[bt] || 'male';
     const faceType = faceTypeMap[bt] || 'male';
+    const clothingBt = clothingBtMap[bt] || 'male';
 
     // 1. Body (z: 10) — body/bodies/{bodyType}/{anim}/{skinColor}.png
     layers.push({
@@ -413,37 +416,37 @@ function buildLayers() {
         });
     }
 
-    // 2. Legs (z: 20) — {basePath}/{bodyType}/{anim}/{color}.png
+    // 2. Legs (z: 20) — {basePath}/{clothingBt}/{anim}/{color}.png
     if (characterState.legs !== 'none') {
         const legDef = LEGS.find(l => l.id === characterState.legs);
         if (legDef?.basePath) {
             layers.push({
                 id: 'legs',
-                urlBuilder: stdUrl(legDef.basePath, bt, characterState.legColor),
+                urlBuilder: stdUrl(legDef.basePath, clothingBt, characterState.legColor),
                 zIndex: 20,
             });
         }
     }
 
-    // 3. Footwear (z: 25) — {basePath}/{bodyType}/{anim}/{color}.png
+    // 3. Footwear (z: 25) — {basePath}/{clothingBt}/{anim}/{color}.png
     if (characterState.footwear !== 'none') {
         const footDef = FOOTWEAR.find(f => f.id === characterState.footwear);
         if (footDef?.basePath) {
             layers.push({
                 id: 'footwear',
-                urlBuilder: stdUrl(footDef.basePath, bt, characterState.shoeColor),
+                urlBuilder: stdUrl(footDef.basePath, clothingBt, characterState.shoeColor),
                 zIndex: 25,
             });
         }
     }
 
-    // 4. Top (z: 30) — {basePath}/{bodyType}/{anim}/{color}.png
+    // 4. Top (z: 30) — {basePath}/{clothingBt}/{anim}/{color}.png
     if (characterState.top !== 'none') {
         const topDef = TOPS.find(t => t.id === characterState.top);
         if (topDef?.basePath) {
             layers.push({
                 id: 'top',
-                urlBuilder: stdUrl(topDef.basePath, bt, characterState.topColor),
+                urlBuilder: stdUrl(topDef.basePath, clothingBt, characterState.topColor),
                 zIndex: 30,
             });
         }
