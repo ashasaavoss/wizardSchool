@@ -27,35 +27,86 @@ const SKIN_COLORS = [
 // Hair styles. 'layered' means the asset uses bg/fg sublayers.
 const HAIR_STYLES = [
     { id: 'none', label: 'None' },
-    { id: 'plain', label: 'Plain' },
+    { id: 'afro', label: 'Afro' },
+    { id: 'balding', label: 'Balding' },
     { id: 'bangs', label: 'Bangs' },
+    { id: 'bangs_bun', label: 'Bangs Bun', layered: true },
     { id: 'bangslong', label: 'Long Bangs' },
+    { id: 'bangslong2', label: 'Long Bangs 2' },
     { id: 'bangsshort', label: 'Short Bangs' },
+    { id: 'bedhead', label: 'Bedhead' },
     { id: 'bob', label: 'Bob' },
+    { id: 'bob_side_part', label: 'Bob Side Part' },
+    { id: 'braid', label: 'Braid', layered: true },
+    { id: 'braid2', label: 'Braid 2', layered: true },
     { id: 'bunches', label: 'Bunches', layered: true },
     { id: 'buzzcut', label: 'Buzzcut' },
+    { id: 'cornrows', label: 'Cornrows' },
+    { id: 'cowlick', label: 'Cowlick' },
+    { id: 'cowlick_tall', label: 'Tall Cowlick' },
+    { id: 'curls_large', label: 'Large Curls' },
+    { id: 'curls_large_xlong', label: 'Extra Long Curls', layered: true },
     { id: 'curly_long', label: 'Curly Long' },
     { id: 'curly_short', label: 'Curly Short' },
+    { id: 'curly_short2', label: 'Curly Short 2' },
+    { id: 'curtains', label: 'Curtains' },
+    { id: 'curtains_long', label: 'Long Curtains', layered: true },
+    { id: 'dreadlocks_long', label: 'Long Dreadlocks', layered: true },
+    { id: 'dreadlocks_short', label: 'Short Dreadlocks' },
+    { id: 'extensions', label: 'Extensions', layered: true },
+    { id: 'flat_top_fade', label: 'Flat Top Fade' },
+    { id: 'flat_top_straight', label: 'Flat Top Straight' },
+    { id: 'half_up', label: 'Half Up', layered: true },
     { id: 'halfmessy', label: 'Half Messy' },
+    { id: 'high_and_tight', label: 'High & Tight' },
+    { id: 'high_ponytail', label: 'High Ponytail', layered: true },
+    { id: 'idol', label: 'Idol' },
+    { id: 'jewfro', label: 'Jewfro' },
+    { id: 'lob', label: 'Lob' },
     { id: 'long', label: 'Long' },
+    { id: 'long_band', label: 'Long Band', layered: true },
+    { id: 'long_center_part', label: 'Long Center Part', layered: true },
     { id: 'long_messy', label: 'Long Messy' },
+    { id: 'long_messy2', label: 'Long Messy 2' },
     { id: 'long_straight', label: 'Long Straight' },
     { id: 'long_tied', label: 'Long Tied', layered: true },
+    { id: 'longhawk', label: 'Longhawk' },
     { id: 'loose', label: 'Loose' },
     { id: 'messy1', label: 'Messy' },
+    { id: 'messy2', label: 'Messy 2' },
+    { id: 'messy3', label: 'Messy 3' },
+    { id: 'mop', label: 'Mop' },
     { id: 'natural', label: 'Natural' },
     { id: 'page', label: 'Page' },
+    { id: 'page2', label: 'Page 2' },
     { id: 'parted', label: 'Parted' },
+    { id: 'parted2', label: 'Parted 2' },
+    { id: 'parted3', label: 'Parted 3' },
+    { id: 'parted_side_bangs', label: 'Parted Side Bangs' },
+    { id: 'parted_side_bangs2', label: 'Parted Side Bangs 2' },
     { id: 'pigtails', label: 'Pigtails' },
+    { id: 'pigtails_bangs', label: 'Pigtails w/ Bangs', layered: true },
     { id: 'pixie', label: 'Pixie' },
+    { id: 'plain', label: 'Plain' },
     { id: 'ponytail', label: 'Ponytail', layered: true },
-    { id: 'ponytail2', label: 'High Ponytail', layered: true },
+    { id: 'ponytail2', label: 'High Ponytail 2', layered: true },
     { id: 'princess', label: 'Princess', layered: true },
+    { id: 'sara', label: 'Sara', layered: true },
+    { id: 'shorthawk', label: 'Short Hawk' },
     { id: 'shoulderl', label: 'Shoulder (Left)', layered: true },
     { id: 'shoulderr', label: 'Shoulder (Right)', layered: true },
+    { id: 'single', label: 'Single' },
     { id: 'spiked', label: 'Spiked' },
+    { id: 'spiked2', label: 'Spiked 2' },
+    { id: 'spiked_liberty', label: 'Liberty Spikes' },
     { id: 'swoop', label: 'Swoop' },
+    { id: 'swoop_side', label: 'Swoop Side' },
+    { id: 'twists_fade', label: 'Twists Fade' },
+    { id: 'twists_straight', label: 'Twists Straight' },
     { id: 'unkempt', label: 'Unkempt' },
+    { id: 'wavy', label: 'Wavy' },
+    { id: 'xlong', label: 'Extra Long', layered: true },
+    { id: 'xlong_wavy', label: 'Extra Long Wavy', layered: true },
 ];
 
 const HAIR_COLORS = [
@@ -154,8 +205,14 @@ const HEADWEAR = [
     { id: 'none', label: 'None', path: null },
     { id: 'wizard', label: 'Wizard Hat', basePath: 'hat/magic/wizard/base' },
     { id: 'celestial', label: 'Celestial Hat', basePath: 'hat/magic/celestial' },
+    { id: 'celestial_moon', label: 'Moon & Stars Hat', basePath: 'hat/magic/celestial_moon' },
+    { id: 'large_magic', label: 'Large Wizard Hat', basePath: 'hat/magic/large' },
     { id: 'headband', label: 'Headband', basePath: 'hat/headband/thick' },
     { id: 'hood_cloth', label: 'Hood', basePath: 'hat/cloth/hood' },
+    { id: 'hood_sack', label: 'Sack Hood', basePath: 'hat/cloth/hood_sack' },
+    { id: 'bandana', label: 'Bandana', basePath: 'hat/cloth/bandana' },
+    { id: 'bandana2', label: 'Bandana 2', basePath: 'hat/cloth/bandana2' },
+    { id: 'leather_cap', label: 'Leather Cap', basePath: 'hat/cloth/leather_cap' },
 ];
 
 const HAT_COLORS = [
@@ -176,6 +233,7 @@ const CAPES = [
     { id: 'none', label: 'None', path: null },
     { id: 'solid', label: 'Solid Cape', basePath: 'cape/solid' },
     { id: 'tattered', label: 'Tattered Cape', basePath: 'cape/tattered' },
+    { id: 'trim', label: 'Trimmed Cape', basePath: 'cape/trim' },
 ];
 
 const CAPE_COLORS = [
@@ -190,6 +248,81 @@ const CAPE_COLORS = [
     { id: 'white', label: 'White' },
 ];
 
+// Ears
+const EARS = [
+    { id: 'none', label: 'None (Human)', path: null },
+    { id: 'elven', label: 'Elven' },
+    { id: 'big', label: 'Big' },
+    { id: 'long', label: 'Long' },
+    { id: 'cat', label: 'Cat' },
+    { id: 'dragon', label: 'Dragon' },
+    { id: 'wolf', label: 'Wolf' },
+    { id: 'medium', label: 'Medium' },
+    { id: 'down', label: 'Floppy' },
+];
+
+// Noses
+const NOSES = [
+    { id: 'none', label: 'Default' },
+    { id: 'button', label: 'Button' },
+    { id: 'big', label: 'Big' },
+    { id: 'straight', label: 'Straight' },
+    { id: 'large', label: 'Large' },
+];
+
+// Facial hair
+const FACIAL_HAIR = [
+    { id: 'none', label: 'None', path: null },
+    { id: 'beard_basic', label: 'Basic Beard', basePath: 'beards/beard/basic' },
+    { id: 'beard_trimmed', label: 'Trimmed Beard', basePath: 'beards/beard/trimmed' },
+    { id: 'beard_medium', label: 'Medium Beard', basePath: 'beards/beard/medium' },
+    { id: 'beard_winter', label: 'Winter Beard', basePath: 'beards/beard/winter' },
+    { id: 'beard_5oclock', label: '5 O\'Clock Shadow', basePath: 'beards/beard/5oclock_shadow' },
+    { id: 'mustache_basic', label: 'Mustache', basePath: 'beards/mustache/basic' },
+    { id: 'mustache_handlebar', label: 'Handlebar', basePath: 'beards/mustache/handlebar' },
+    { id: 'mustache_walrus', label: 'Walrus', basePath: 'beards/mustache/walrus' },
+    { id: 'mustache_french', label: 'French', basePath: 'beards/mustache/french' },
+    { id: 'mustache_bigstache', label: 'Big Stache', basePath: 'beards/mustache/bigstache' },
+    { id: 'mustache_horseshoe', label: 'Horseshoe', basePath: 'beards/mustache/horseshoe' },
+];
+
+const FACIAL_HAIR_COLORS = [
+    { id: 'black', label: 'Black' },
+    { id: 'dark_brown', label: 'Dark Brown' },
+    { id: 'chestnut', label: 'Chestnut' },
+    { id: 'light_brown', label: 'Light Brown' },
+    { id: 'blonde', label: 'Blonde' },
+    { id: 'sandy', label: 'Sandy' },
+    { id: 'platinum', label: 'Platinum' },
+    { id: 'white', label: 'White' },
+    { id: 'ginger', label: 'Ginger' },
+    { id: 'redhead', label: 'Redhead' },
+    { id: 'gray', label: 'Gray' },
+    { id: 'raven', label: 'Raven' },
+];
+
+// Glasses & face accessories
+const GLASSES = [
+    { id: 'none', label: 'None', path: null },
+    { id: 'round', label: 'Round Glasses' },
+    { id: 'halfmoon', label: 'Half-Moon Glasses' },
+    { id: 'nerd', label: 'Thick Frames' },
+    { id: 'secretary', label: 'Secretary' },
+    { id: 'shades', label: 'Shades' },
+    { id: 'sunglasses', label: 'Sunglasses' },
+];
+
+// Earrings
+const EARRINGS = [
+    { id: 'none', label: 'None', path: null },
+    { id: 'simple', label: 'Simple' },
+    { id: 'stud', label: 'Stud' },
+    { id: 'emerald', label: 'Emerald' },
+    { id: 'moon', label: 'Moon' },
+    { id: 'pear', label: 'Pear' },
+    { id: 'princess', label: 'Princess' },
+];
+
 // ── Character State ──
 
 const characterState = {
@@ -198,6 +331,12 @@ const characterState = {
     skinColor: 'light',
     hairStyle: 'plain',
     hairColor: 'dark_brown',
+    ears: 'none',
+    nose: 'none',
+    facialHair: 'none',
+    facialHairColor: 'dark_brown',
+    glasses: 'none',
+    earrings: 'none',
     top: 'longsleeve',
     topColor: 'navy',
     legs: 'pants',
@@ -252,6 +391,24 @@ function buildLayers() {
         urlBuilder: (anim) => `${ASSET_BASE}/head/faces/${faceType}/neutral/${anim}.png`,
         zIndex: 16,
     });
+
+    // 1d. Ears (z: 17) — head/ears/{earType}/adult/{anim}/{skinColor}.png
+    if (characterState.ears !== 'none') {
+        layers.push({
+            id: 'ears',
+            urlBuilder: stdUrl(`head/ears/${characterState.ears}`, 'adult', characterState.skinColor),
+            zIndex: 17,
+        });
+    }
+
+    // 1e. Nose (z: 18) — head/nose/{noseType}/adult/{anim}.png
+    if (characterState.nose !== 'none') {
+        layers.push({
+            id: 'nose',
+            urlBuilder: (anim) => `${ASSET_BASE}/head/nose/${characterState.nose}/adult/${anim}.png`,
+            zIndex: 18,
+        });
+    }
 
     // 2. Legs (z: 20) — {basePath}/{bodyType}/{anim}/{color}.png
     if (characterState.legs !== 'none') {
@@ -326,7 +483,38 @@ function buildLayers() {
         }
     }
 
-    // 7. Headwear (z: 50) — {basePath}/adult/{anim}/{color}.png
+    // 7. Facial hair (z: 35) — {basePath}/{anim}/{color}.png (no body type)
+    if (characterState.facialHair !== 'none') {
+        const fhDef = FACIAL_HAIR.find(f => f.id === characterState.facialHair);
+        if (fhDef?.basePath) {
+            layers.push({
+                id: 'facial_hair',
+                urlBuilder: noBtUrl(fhDef.basePath, characterState.facialHairColor),
+                zIndex: 35,
+            });
+        }
+    }
+
+    // 7b. Glasses (z: 45) — facial/glasses/{style}/adult/{anim}.png (no color)
+    if (characterState.glasses !== 'none') {
+        layers.push({
+            id: 'glasses',
+            urlBuilder: (anim) => `${ASSET_BASE}/facial/glasses/${characterState.glasses}/adult/${anim}.png`,
+            zIndex: 45,
+        });
+    }
+
+    // 7c. Earrings (z: 42) — facial/earrings/{style}/{genderType}/{anim}.png (no color)
+    if (characterState.earrings !== 'none') {
+        const earringGender = (bt === 'female') ? 'female' : 'male';
+        layers.push({
+            id: 'earrings',
+            urlBuilder: (anim) => `${ASSET_BASE}/facial/earrings/${characterState.earrings}/${earringGender}/${anim}.png`,
+            zIndex: 42,
+        });
+    }
+
+    // 8. Headwear (z: 50) — {basePath}/adult/{anim}/{color}.png
     if (characterState.headwear !== 'none') {
         const hatDef = HEADWEAR.find(h => h.id === characterState.headwear);
         if (hatDef?.basePath) {
@@ -361,6 +549,12 @@ function initUI() {
     populateSelect('skin-color', SKIN_COLORS, characterState.skinColor);
     populateSelect('hair-style', HAIR_STYLES, characterState.hairStyle);
     populateSelect('hair-color', HAIR_COLORS, characterState.hairColor);
+    populateSelect('ear-style', EARS, characterState.ears);
+    populateSelect('nose-style', NOSES, characterState.nose);
+    populateSelect('facial-hair-style', FACIAL_HAIR, characterState.facialHair);
+    populateSelect('facial-hair-color', FACIAL_HAIR_COLORS, characterState.facialHairColor);
+    populateSelect('glasses-style', GLASSES, characterState.glasses);
+    populateSelect('earring-style', EARRINGS, characterState.earrings);
     populateSelect('top-style', TOPS, characterState.top);
     populateSelect('top-color', TOP_COLORS, characterState.topColor);
     populateSelect('leg-style', LEGS, characterState.legs);
@@ -382,6 +576,7 @@ function initUI() {
 function updateColorVisibility() {
     // Hide color selectors when "none" is selected for a category
     toggleColorRow('hair-color-row', characterState.hairStyle !== 'none');
+    toggleColorRow('facial-hair-color-row', characterState.facialHair !== 'none');
     toggleColorRow('top-color-row', characterState.top !== 'none');
     toggleColorRow('leg-color-row', characterState.legs !== 'none');
     toggleColorRow('shoe-color-row', characterState.footwear !== 'none');
@@ -401,6 +596,12 @@ function bindEvents() {
         'skin-color': (v) => characterState.skinColor = v,
         'hair-style': (v) => characterState.hairStyle = v,
         'hair-color': (v) => characterState.hairColor = v,
+        'ear-style': (v) => characterState.ears = v,
+        'nose-style': (v) => characterState.nose = v,
+        'facial-hair-style': (v) => characterState.facialHair = v,
+        'facial-hair-color': (v) => characterState.facialHairColor = v,
+        'glasses-style': (v) => characterState.glasses = v,
+        'earring-style': (v) => characterState.earrings = v,
         'top-style': (v) => characterState.top = v,
         'top-color': (v) => characterState.topColor = v,
         'leg-style': (v) => characterState.legs = v,
@@ -467,6 +668,33 @@ function randomizeCharacter() {
     characterState.skinColor = pick(SKIN_COLORS);
     characterState.hairStyle = pick(HAIR_STYLES.filter(h => h.id !== 'none'));
     characterState.hairColor = pick(HAIR_COLORS);
+
+    // 20% chance of special ears
+    characterState.ears = Math.random() > 0.8
+        ? pick(EARS.filter(e => e.id !== 'none'))
+        : 'none';
+
+    // 30% chance of nose
+    characterState.nose = Math.random() > 0.7
+        ? pick(NOSES.filter(n => n.id !== 'none'))
+        : 'none';
+
+    // 25% chance of facial hair
+    characterState.facialHair = Math.random() > 0.75
+        ? pick(FACIAL_HAIR.filter(f => f.id !== 'none'))
+        : 'none';
+    characterState.facialHairColor = pick(FACIAL_HAIR_COLORS);
+
+    // 15% chance of glasses
+    characterState.glasses = Math.random() > 0.85
+        ? pick(GLASSES.filter(g => g.id !== 'none'))
+        : 'none';
+
+    // 10% chance of earrings
+    characterState.earrings = Math.random() > 0.9
+        ? pick(EARRINGS.filter(e => e.id !== 'none'))
+        : 'none';
+
     characterState.top = pick(TOPS.filter(t => t.id !== 'none'));
     characterState.topColor = pick(TOP_COLORS);
     characterState.legs = pick(LEGS.filter(l => l.id !== 'none'));
