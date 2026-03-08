@@ -226,11 +226,31 @@ function buildLayers() {
     const noBtUrl = (basePath, color) => (anim) =>
         `${ASSET_BASE}/${basePath}/${anim}/${color}.png`;
 
+    // Map body type to head/face type
+    const headTypeMap = { male: 'male', female: 'female', muscular: 'male', teen: 'male', child: 'child' };
+    const faceTypeMap = { male: 'male', female: 'female', muscular: 'male', teen: 'male', child: 'male' };
+    const headType = headTypeMap[bt] || 'male';
+    const faceType = faceTypeMap[bt] || 'male';
+
     // 1. Body (z: 10) — body/bodies/{bodyType}/{anim}/{skinColor}.png
     layers.push({
         id: 'body',
         urlBuilder: stdUrl('body/bodies', bt, characterState.skinColor),
         zIndex: 10,
+    });
+
+    // 1b. Head (z: 15) — head/heads/human/{headType}/{anim}/{skinColor}.png
+    layers.push({
+        id: 'head',
+        urlBuilder: stdUrl('head/heads/human', headType, characterState.skinColor),
+        zIndex: 15,
+    });
+
+    // 1c. Face expression (z: 16) — head/faces/{faceType}/neutral/{anim}.png
+    layers.push({
+        id: 'face',
+        urlBuilder: (anim) => `${ASSET_BASE}/head/faces/${faceType}/neutral/${anim}.png`,
+        zIndex: 16,
     });
 
     // 2. Legs (z: 20) — {basePath}/{bodyType}/{anim}/{color}.png
